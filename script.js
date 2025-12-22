@@ -5,7 +5,7 @@ function showFig(src) {
 }
 
 // Gràfic inicial
-showFig("fig1_lead_time.html");
+showFig("figs/fig1_lead_time.html");
 
 const scroller = scrollama();
 
@@ -17,13 +17,13 @@ scroller
 
   .onStepEnter(response => {
     if (response.index === 0) {
-      showFig("fig1_lead_time.html");
+      showFig("figs/fig1_lead_time.html");
     }
     if (response.index === 1) {
-      showFig("fig2_adr.html");
+      showFig("figs/fig2_adr.html");
     }
     if (response.index === 2) {
-      showFig("fig3_combined.html");
+      showFig("figs/fig3_combined.html");
     }
   })
 
@@ -31,10 +31,10 @@ scroller
     // Si pugem, mostrem el gràfic anterior
     if (response.direction === "up") {
       if (response.index === 2) {
-        showFig("fig2_adr.html");
+        showFig("figs/fig2_adr.html");
       }
       if (response.index === 1) {
-        showFig("fig1_lead_time.html");
+        showFig("figs/fig1_lead_time.html");
       }
     }
   });
