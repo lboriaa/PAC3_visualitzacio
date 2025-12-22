@@ -42,6 +42,11 @@
       height: 100%;
       border: none;
     }
+
+    /* ✅ AFEGIT: element sentinella per tornar al primer gràfic */
+    #top-trigger {
+      height: 1px;
+    }
   </style>
 </head>
 
@@ -52,6 +57,10 @@
 <div id="container">
 
   <div id="text">
+
+    <!-- ✅ AFEGIT: trigger invisible -->
+    <div id="top-trigger"></div>
+
     <div class="step">El temps d’antelació influeix en la cancel·lació.</div>
     <div class="step">El preu també hi juga un paper, però no de forma clara.</div>
     <div class="step">El risc emergeix de la combinació de temps i preu.</div>
